@@ -4,11 +4,15 @@ li{list-style: none;
 
 
 .Bg-principal{
-    background-color: black;
+    background-color: #08040c;
 }
 .lista-footer{
     color: white;
 }
 .Menu{
     display: flex;
+    justify-content:end;
+}
+.colores-nav{
+  background-color:  #e9dec5;
 }
