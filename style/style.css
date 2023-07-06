@@ -2,11 +2,11 @@
 li{list-style: none;
 }
 
-
+/* My CSS */
 .Bg-principal{
     background-color: #08040c;
 }
-.lista-footer{
+.lista-footer, .icono{
     color: white;
 }
 .Menu{
