@@ -3,10 +3,12 @@ li{list-style: none;
 }
 
 
-
 .Bg-principal{
     background-color: black;
 }
 .lista-footer{
     color: white;
+}
+.Menu{
+    display: flex;
 }
