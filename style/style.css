@@ -1,18 +1,99 @@
 /* General */
-li{list-style: none;
+body,
+footer {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* My CSS */
-.Bg-principal{
-    background-color: #08040c;
+.bg-footer {
+  background-color: #08040c;
 }
-.lista-footer, .icono{
-    color: white;
+.bg-nav {
+  background-color: #e9dec5;
 }
-.Menu{
-    display: flex;
-    justify-content:end;
+.lista-footer,
+.icono {
+  color: white;
 }
-.colores-nav{
-  background-color:  #e9dec5;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 3em;
+  justify-content: end;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+.lista-footer {
+  display: flex;
+  line-height: 3;
+}
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgb(0, 0, 0);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: rgb(0, 0, 0);
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+span {
+  color: white;
 }
