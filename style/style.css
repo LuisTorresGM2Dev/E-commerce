@@ -6,7 +6,9 @@ footer {
   border: 0px;
 }
 li {
+  font-size: small;
   list-style: none;
+  font-family: 'Instrument Sans',Helvetica, sans-serif;
 }
 img {
   width: 50%;
@@ -16,9 +18,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
+h1, p, span{
+  color: white;
+  font-family: 'Instrument Sans',Helvetica, sans-serif;
+}
+.logo{
+  padding-left: 5px;
+}
+.title>h1{
+  padding-left: 5px;
+  font-size: 120px;
+}
+
 
 /* My CSS */
-.bg-footer {
+.bg-principal{
   background-color: #08040c;
 }
 .bg-nav {
@@ -33,6 +47,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.p-principal{
+  font-size: 25px ;
+}
 
 .nav {
   display: flex;
@@ -45,55 +62,40 @@ a {
   display: flex;
   line-height: 3;
 }
-.cta {
-  position: relative;
-  margin: auto;
-  padding: 19px 22px;
-  transition: all 0.2s ease;
+.btn-principal{
+  border-radius: 60px;
+  padding:1em;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Instrument Sans',Helvetica, sans-serif;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  transition: all 1s;
+} 
+button:hover{
+  background-color:#000000;
+  color:rgb(255, 255, 255);
+  border-color: #000000;
 }
-.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 28px;
-  background: rgb(0, 0, 0);
-  width: 56px;
-  height: 56px;
-  transition: all 0.3s ease;
+.btn-footer{
+  border-radius: 60px;
+  padding:1em;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Instrument Sans',Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  transition: all 1s;
 }
-.cta span {
-  position: relative;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 900;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #ffffff;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
-}
-.cta:hover:before {
-  width: 100%;
-  background: rgb(0, 0, 0);
-}
-.cta:hover svg {
-  transform: translateX(0);
-}
-.cta:active {
-  transform: scale(0.96);
-}
-span {
-  color: white;
+.btn-footer:hover{
+  background-color: #FFFFFF;
+  color: #000000;
 }
